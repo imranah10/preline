@@ -1,5 +1,6 @@
 import React from "react";
 import approachbg from "./assets/images/approach/approachbg.avif";
+import { IoCallOutline } from "react-icons/io5";
 
 export const Approach = () => {
   return (
@@ -18,7 +19,7 @@ export const Approach = () => {
     <img className="rounded-xl" src={approachbg} alt="approach" />
   </div>
 
-  <div>
+  <div className=" pt-10">
     <h4 className="text-[#FFFF00] font-semibold text-xs mb-4">STEPS</h4>
 
     <div className="space-y-8">
@@ -36,14 +37,20 @@ export const Approach = () => {
 
           {/* Corresponding step title or description */}
           <div>
-            <h2 className="text-white text-xl font-semibold">Step {number} Title</h2>
-            <p className="text-gray-300">Short description about step {number}.</p>
+            <p className="text-white">
+            Market Research and Analysis: Identify your target audience and understand their needs, preferences, and behaviors.</p>
           </div>
         </div>
       ))}
     </div>
+    <div className="flex items-center justify-center border border-[#FFFF00] text-[#FFFF00] py-2  rounded-xl hover:bg-[#FFFF00] hover:text-black transition duration-300 cursor-pointer w-[200px] mt-6">
+  <IoCallOutline className="text-2xl mr-2" />
+  <button className="font-medium">Schedule a call</button>
+</div>
+
   </div>
 </div>
+
 
       </div>
     </>

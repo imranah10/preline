@@ -5,6 +5,8 @@ import { Hero } from './components/Hero'
 import { Success } from './components/Success'
 import { Reviews } from './Reviews'
 import { Approach } from './Approach'
+import { Contactus } from './Contactus'
+import Footer from './Footer'
 
 function App() {
 
@@ -19,6 +21,8 @@ function App() {
     </div>
     <Reviews/>
     <Approach/>
+    <Contactus/>
+    <Footer/>
     </div>
     </>
   )
